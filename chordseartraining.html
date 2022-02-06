@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guitar Daily Practice - Chords Ear Training</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="/index.html" class="logoLink"
+          ><img class="logo" src="./logo.png" alt=""
+        /></a>
+        <div class="menu">
+          <a href="/chordseartraining.html" class="menuItem menuSelected"
+            >Chords Ear Training</a
+          >
+          <a href="" class="menuItem">Coming Soon</a>
+          <a href="" class="menuItem">Coming Soon</a>
+          <a href="" class="menuItem">Coming Soon</a>
+          <a href="" class="menuItem">Coming Soon</a>
+        </div>
+      </div>
+      <div class="main">
+        <h2>Chords Ear Training</h2>
+        <p>
+          Being able to recognise chords is an important element of guitar
+          learning, use this game to train your ears. Start with two chords and
+          add more as you get better at recognising them.<br />
+          <br />
+          How to play:<br />
+          1. Select which chords to include in the game. <br />
+          2. Press the button to play a random chord from your selection. (Make
+          sure to have your device volume on) <br />
+          3. Press the button corresponding to your answer or press Repeat to
+          listen to the same chord again.<br />
+        </p>
+        <button class="btn btnPlay">Play</button>
+      </div>
+      <div class="mainGame hidden">
+        <div class="chordsTop">
+          <div class="chordsTopItem">
+            <input type="checkbox" id="A" name="D" class="larger" checked />
+            <label for="A">A</label>
+          </div>
+          <div class="chordsTopItem">
+            <input type="checkbox" id="B" name="B" class="larger" unchecked />
+            <label for="B">B</label>
+          </div>
+          <div class="chordsTopItem">
+            <input type="checkbox" id="C" name="C" class="larger" unchecked />
+            <label for="C">C</label>
+          </div>
+          <div class="chordsTopItem">
+            <input type="checkbox" id="D" name="D" class="larger" checked />
+            <label for="D">D</label>
+          </div>
+          <div class="chordsTopItem">
+            <input type="checkbox" id="E" name="E" class="larger" checked />
+            <label for="E">E</label>
+          </div>
+          <div class="chordsTopItem">
+            <input type="checkbox" id="F" name="F" class="larger" unchecked />
+            <label for="F">F</label>
+          </div>
+          <div class="chordsTopItem">
+            <input type="checkbox" id="G" name="G" class="larger" unchecked />
+            <label for="G">G</label>
+          </div>
+          <button class="btn buttonPlayChord">Play Chord</button>
+        </div>
+        <div class="buttonsChords">
+          <button class="btn btnChords btnChordA hidden">A</button>
+          <button class="btn btnChords btnChordB hidden">B</button>
+          <button class="btn btnChords btnChordC hidden">C</button>
+          <button class="btn btnChords btnChordD hidden">D</button>
+          <button class="btn btnChords btnChordE hidden">E</button>
+          <button class="btn btnChords btnChordF hidden">F</button>
+          <button class="btn btnChords btnChordG hidden">G</button>
+        </div>
+      </div>
+    </div>
+    <script src="chordseartraining.js"></script>
+  </body>
+</html>

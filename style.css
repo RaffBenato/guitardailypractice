@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c51010;
+  font-family: "Days One", sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: 5px auto;
+  min-height: 100vh;
+  background-color: white;
+  color: #c68410;
+  position: relative;
+  border-radius: 5px;
+}
+
+.header {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  box-shadow: 0px 9px 7px -2px rgba(197, 16, 16, 0.94);
+}
+
+.logo {
+  width: 100%;
+}
+
+.logoLink {
+  display: block;
+  width: 100%;
+  margin: 25px 15px;
+}
+
+.menu {
+  background-color: #c51010;
+  width: 100%;
+  height: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+
+.menuItem {
+  background-color: whitesmoke;
+  border: none;
+  margin: 5px;
+  padding: 7px;
+  color: #c51010;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.menuSelected {
+  background-color: #c51010;
+  color: #c68410;
+}
+
+.main {
+  text-align: center;
+  margin: 90px 100px;
+}
+
+p {
+  margin: 40px 0;
+  line-height: 1.4em;
+}
+
+.icons {
+  display: flex;
+  width: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.iconsItem {
+  color: #c68410;
+  margin: 10px;
+}
+
+.mainGame {
+  position: relative;
+  width: 98%;
+  height: 420px;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 2px solid #c51010;
+}
+
+.chordsTop {
+  position: absolute;
+  width: 100%;
+  min-height: 50px;
+  border-bottom: 2px solid #c51010;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 50px;
+}
+
+.chordsTopItem {
+  margin: 0 15px;
+}
+
+input.larger {
+  height: 30px;
+  width: 30px;
+  background-color: #c51010;
+}
+
+.btn {
+  background-color: #c51010;
+  height: 60px;
+  width: 110px;
+  border-radius: 10px;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: "Days One", sans-serif;
+}
+
+.btnPlay {
+  margin-bottom: 30px;
+}
+
+.buttonsChords {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 120px;
+}
+
+.btnChords {
+  height: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: whitesmoke;
+  font-size: 3rem;
+  margin: 0 20px;
+}
+
+.buttonPlayChord {
+  min-width: 220px;
+  margin-left: 30px;
+}
+
+.hidden {
+  display: none;
+}
