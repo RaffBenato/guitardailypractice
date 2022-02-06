@@ -60,7 +60,6 @@ btnPlayEl.addEventListener(`click`, function () {
       currentAudio = chordAudio;
       answer = chordsAudio[randomAudio];
       chordAudio.play();
-      console.log(chordsAudio[randomAudio]);
 
       isPlaying = false;
       waitingAnswer = true;
