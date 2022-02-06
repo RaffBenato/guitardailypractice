@@ -189,7 +189,7 @@ input.larger {
   }
 
   .btnGames {
-    display: inline;
+    display: none;
   }
 
   .container {
