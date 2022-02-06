@@ -56,7 +56,7 @@ btnPlayEl.addEventListener(`click`, function () {
   if (!waitingAnswer) {
     if (chordsAudio.length > 0 && isPlaying) {
       const randomAudio = Math.floor(Math.random() * chordsAudio.length);
-      const chordAudio = new Audio(`./Audio/${chordsAudio[randomAudio]}.mp3`);
+      const chordAudio = new Audio(`./audio/${chordsAudio[randomAudio]}.mp3`);
       currentAudio = chordAudio;
       answer = chordsAudio[randomAudio];
       chordAudio.play();
