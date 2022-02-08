@@ -83,7 +83,7 @@ p {
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 .iconsItem {
   color: #c68410;
@@ -126,7 +126,7 @@ input.larger {
 .btn {
   background-color: #c51010;
   height: 60px;
-  width: 110px;
+  min-width: 110px;
   border-radius: 10px;
   color: whitesmoke;
   border: none;
@@ -166,6 +166,7 @@ input.larger {
 
 .btnGames {
   display: none;
+  padding: 0 20px;
 }
 
 .hidden {

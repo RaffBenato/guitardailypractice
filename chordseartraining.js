@@ -21,11 +21,23 @@ const mainGameEl = document.querySelector(`.mainGame`);
 const btnPlayEl = document.querySelector(`.buttonPlayChord`);
 const btnStartEl = document.querySelector(`.btnPlay`);
 
-let chordsAudio = [];
 let isPlaying = true;
 let waitingAnswer = false;
 let answer;
 let currentAudio = new Audio();
+
+function getLocalStorageChords() {
+  chordsAudio = JSON.parse(localStorage.getItem(`gdpChordsEarTraining`)) || [
+    "A",
+    "D",
+    "E",
+  ];
+  for (let i = 0; i < chordsEl.length; i++) {
+    if (chordsAudio.includes(chordsEl[i].id)) {
+      chordsEl[i].checked = true;
+    }
+  }
+}
 
 function checkCheckedChords() {
   chordsAudio = [];
@@ -37,6 +49,7 @@ function checkCheckedChords() {
     } else {
       btnsChords[i].classList.add(`hidden`);
     }
+    localStorage.setItem("gdpChordsEarTraining", JSON.stringify(chordsAudio));
   }
 }
 
@@ -102,5 +115,7 @@ btnsChords.forEach((btn) => {
     }
   });
 });
+
+getLocalStorageChords();
 
 checkCheckedChords();
